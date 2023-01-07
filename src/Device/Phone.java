@@ -12,4 +12,7 @@ public class Phone extends Device {
 		return "phone of model: " + this.model;
 	}
 
+	public void turnOn(){
+		System.out.println("Telefon wlacza sie");
+	}
 }

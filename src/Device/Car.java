@@ -14,4 +14,7 @@ public class Car extends Device {
     public String toString() {
     	return "Device.Car of model: " + this.model;
     }
+     public void turnOn(){
+         System.out.println("Samochod wlacza sie");
+    }
 }
