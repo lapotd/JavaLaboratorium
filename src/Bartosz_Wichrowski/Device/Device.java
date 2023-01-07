@@ -1,4 +1,4 @@
-package Device;
+package Bartosz_Wichrowski.Device;
 
 public abstract class Device {
     public final String model;

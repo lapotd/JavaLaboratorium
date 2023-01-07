@@ -1,4 +1,4 @@
-package Device;
+package Bartosz_Wichrowski.Device;
 
 public class Phone extends Device {
 	public String screenSize;

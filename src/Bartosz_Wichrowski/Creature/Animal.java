@@ -1,4 +1,8 @@
-public class Animal {
+package Bartosz_Wichrowski.Creature;
+
+import Bartosz_Wichrowski.Saleable;
+
+public class Animal implements Saleable {
     String species;
     String name;
     Double weight;
@@ -38,4 +42,14 @@ public class Animal {
 	public String toString() {
 		return "animal of species: " + this.species;
 	}
+
+    public void sell(Human seller, Human buyer, Double price) {
+            if(seller.pet == this && buyer.cash >= price){
+                seller.cash += price;
+                buyer.cash -= price;
+                buyer.pet = seller.pet;
+                seller.pet = null;
+
+            }
+    }
 }

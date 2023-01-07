@@ -1,19 +1,23 @@
-import Device.Car;
-import Device.Phone;
+package Bartosz_Wichrowski.Creature;
+
+import Bartosz_Wichrowski.Device.Car;
+import Bartosz_Wichrowski.Device.Phone;
 
 public class Human extends Animal {
 
-	public Human(String name) {
+	public Human(String name, Double cash) {
 		super("homo sapiens");
 		this.name = name;
 		this.salary = 0.0;
 		this.weight = 70.0;
+		this.cash = cash;
 	}
 	public Animal pet;
 	public Phone phone;
 	public String name;
+	public Double cash;
 	private Double salary;
-	private Car car;
+	public Car car;
 
 	public Double getSalary() {
 		return this.salary;
@@ -46,6 +50,19 @@ public class Human extends Animal {
 		else {
 			System.out.println("zapisz si� na studia i znajd� now� robot� albo id� po podwy�k�");
 		}
+	}
+
+	public void carSold(){
+		this.car=null;
+	}
+
+	public void carBought(Car car){
+		this.car=car;
+	}
+
+	public void sell(Human seller, Human buyer, Double price) {
+		System.out.println("Ty bydlaku, probojesz sprzedac czlowieka!");
+		return;
 	}
 	
 	public String toString() {
