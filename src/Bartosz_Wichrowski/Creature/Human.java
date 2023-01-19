@@ -1,6 +1,6 @@
 package Bartosz_Wichrowski.Creature;
 
-import Bartosz_Wichrowski.Device.Car;
+import Bartosz_Wichrowski.Device.Cars.Car;
 import Bartosz_Wichrowski.Device.Phone;
 
 public class Human extends Animal {
