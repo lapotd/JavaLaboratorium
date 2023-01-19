@@ -1,7 +1,7 @@
 package Bartosz_Wichrowski.Device;
 
 import Bartosz_Wichrowski.Creature.Human;
-import Bartosz_Wichrowski.Saleable;
+import Bartosz_Wichrowski.Behaviours.Saleable;
 
 public class Car extends Bartosz_Wichrowski.Device.Device implements Saleable{
     public Car(String producer, String model, Integer yearOfProduction) {

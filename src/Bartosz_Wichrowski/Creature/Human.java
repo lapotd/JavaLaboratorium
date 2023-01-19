@@ -62,11 +62,9 @@ public class Human extends Animal {
 
 	public void sell(Human seller, Human buyer, Double price) {
 		System.out.println("Ty bydlaku, probojesz sprzedac czlowieka!");
-		return;
 	}
 	
 	public String toString() {
 		return "human named: " + this.name;
 	}
-
 }

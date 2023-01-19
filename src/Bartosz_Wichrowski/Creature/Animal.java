@@ -1,8 +1,9 @@
 package Bartosz_Wichrowski.Creature;
 
-import Bartosz_Wichrowski.Saleable;
+import Bartosz_Wichrowski.Behaviours.Feedable;
+import Bartosz_Wichrowski.Behaviours.Saleable;
 
-public class Animal implements Saleable {
+public abstract class Animal implements Saleable, Feedable {
     String species;
     String name;
     Double weight;
@@ -36,7 +37,11 @@ public class Animal implements Saleable {
         else{
             this.weight += 0.5;
         }
+    }
 
+    public void feed(Double foodWeight) {
+        this.weight += foodWeight;
+        System.out.println("nowa waga to " + this.weight);
     }
     
 	public String toString() {
